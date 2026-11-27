@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Syafiratun Najah, siswi TKJ SMK Panca Bhakti Rakit.">
+  <title>Portofolio | Syafiratun Najah</title>
+  <style>
+    :root {
+      --navy: #17365d;
+      --blue: #2f6fbb;
+      --pale: #eaf1f8;
+      --ink: #243247;
+      --muted: #66758a;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: #f4f6f9;
+      line-height: 1.7;
+    }
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky; top: 0; z-index: 10;
+    }
+    nav {
+      max-width: 1100px; margin: auto; padding: 15px 22px;
+      display: flex; align-items: center; justify-content: space-between; gap: 18px;
+    }
+    .brand { color: var(--navy); font-weight: 800; letter-spacing: .4px; }
+    nav ul { display: flex; flex-wrap: wrap; gap: 18px; list-style: none; }
+    nav a { color: var(--ink); text-decoration: none; font-size: .92rem; }
+    nav a:hover { color: var(--blue); }
+    .hero {
+      background: linear-gradient(120deg, #17365d, #2f6fbb);
+      color: white; padding: 85px 22px;
+    }
+    .hero-inner { max-width: 1100px; margin: auto; }
+    .eyebrow { color: #d8e8fb; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; }
+    h1 { font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.15; margin: 12px 0; }
+    .hero p { max-width: 650px; color: #e8f1fb; }
+    .button {
+      display: inline-block; margin-top: 24px; padding: 11px 20px;
+      background: white; color: var(--navy); border-radius: 8px;
+      text-decoration: none; font-weight: 700;
+    }
+    main { max-width: 1100px; margin: auto; padding: 30px 22px 65px; }
+    section { padding: 48px 0 12px; }
+    .section-title { color: var(--navy); font-size: 1.8rem; margin-bottom: 8px; }
+    .section-intro { color: var(--muted); margin-bottom: 22px; }
+    .about, .card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .panel, .card {
+      background: white; border: 1px solid #e5eaf0; border-radius: 14px;
+      padding: 22px; box-shadow: 0 8px 24px rgba(20, 45, 75, .05);
+    }
+    .panel h3, .card h3 { color: var(--navy); margin-bottom: 8px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 12px; }
+    .tag {
+      background: var(--pale); color: var(--navy); border-radius: 20px;
+      padding: 6px 12px; font-size: .9rem;
+    }
+    .contact-links a { color: var(--blue); overflow-wrap: anywhere; }
+    footer { text-align: center; padding: 24px; background: #e9eef4; color: var(--muted); }
+    @media (max-width: 700px) {
+      nav { align-items: flex-start; flex-direction: column; }
+      nav ul { gap: 10px 14px; }
+      .hero { padding: 65px 22px; }
+      .about, .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navigasi utama">
+      <div class="brand">SYAFIRA.PORTFOLIO</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <p class="eyebrow">Student Portfolio · Teknik Komputer dan Jaringan</p>
+      <h1>Halo, saya<br>Syafiratun Najah.</h1>
+      <p>Siswi kelas XII TKJ di SMK Panca Bhakti Rakit. Saya tertarik mempelajari teknologi jaringan, mengembangkan keterampilan, dan membangun usaha di masa depan.</p>
+      <a class="button" href="#about">Kenali Saya</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2 class="section-title">Tentang Saya</h2>
+      <p class="section-intro">Informasi singkat mengenai diri dan tujuan saya.</p>
+      <div class="about">
+        <article class="panel">
+          <h3>Profil</h3>
+          <p>Nama: Syafiratun Najah</p>
+          <p>Kelas: XII TKJ 01</p>
+          <p>Sekolah: SMK Panca Bhakti Rakit</p>
+          <p>Jurusan: Teknik Komputer dan Jaringan</p>
+        </article>
+        <article class="panel">
+          <h3>Minat dan Tujuan</h3>
+          <p>Cita-cita: Owner bisnis</p>
+          <p>Hobi: Lari, badminton, dan healing</p>
+          <p>Saya ingin terus belajar, menambah pengalaman, serta mengembangkan kemampuan untuk masa depan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-intro">Bidang keterampilan yang dipelajari dan dikembangkan selama di jurusan TKJ.</p>
+      <div class="panel">
+        <div class="tag-list">
+          <span class="tag">Konfigurasi jaringan dasar</span>
+          <span class="tag">Instalasi sistem operasi</span>
+          <span class="tag">Perakitan komputer</span>
+          <span class="tag">Administrasi server dasar</span>
+          <span class="tag">Troubleshooting jaringan</span>
+          <span class="tag">Kerja sama tim</span>
+          <span class="tag">Komunikasi</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-intro">Contoh proyek pembelajaran dan pengembangan portofolio.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Konfigurasi Jaringan</h3>
+          <p>Proyek pembelajaran mengenai pengaturan perangkat jaringan dan pengujian konektivitas sesuai praktik di jurusan TKJ.</p>
+        </article>
+        <article class="card">
+          <h3>Personal Portfolio Website</h3>
+          <p>Website portofolio untuk menyajikan profil, keterampilan, proyek, dan informasi kontak dalam satu halaman.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="panel">
+        <h3>Pengalaman Pembelajaran TKJ</h3>
+        <p>Mempelajari dasar-dasar jaringan komputer, konfigurasi perangkat, instalasi sistem operasi, serta pemecahan masalah melalui kegiatan pembelajaran dan praktik sekolah.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-intro">Temukan saya melalui media sosial.</p>
+      <div class="panel contact-links">
+        <p>Instagram: <a href="https://www.instagram.com/vrtnnza/" target="_blank" rel="noopener">@vrtnnza</a></p>
+        <p>TikTok: <a href="https://www.tiktok.com/@idkwhoartra" target="_blank" rel="noopener">@idkwhoartra</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Syafiratun Najah · Personal Portfolio</footer>
+</body>
+</html>
